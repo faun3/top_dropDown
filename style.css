@@ -25,6 +25,7 @@ body {
   flex-flow: row nowrap;
   align-content: center;
   justify-content: space-between;
+  padding-left: 3%;
 }
 
 .topBar p {
