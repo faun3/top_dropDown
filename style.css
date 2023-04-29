@@ -2,14 +2,40 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background-color: darkslategray;
 }
 
 #project {
   width: 100%;
   height: 100%;
-  color: red;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+}
+
+.menuContainer {
+  background-color: white;
+  width: clamp(500px, 60%, 60%);
+  height: clamp(300px, 40%, 40%);
+}
+
+.topBar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+}
+
+.topBar p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.materialButton {
+  background-color: transparent;
+  color: black;
+  border: 0;
+  cursor: pointer;
 }
