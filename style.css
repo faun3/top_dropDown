@@ -17,6 +17,7 @@ body {
 .menuContainer {
   background-color: white;
   width: clamp(500px, 60%, 60%);
+  border-radius: 10px;
 }
 
 .topBar {
@@ -24,7 +25,6 @@ body {
   flex-flow: row nowrap;
   align-content: center;
   justify-content: space-between;
-  border-bottom: 2px solid lightgray;
 }
 
 .topBar p {
@@ -39,6 +39,6 @@ body {
   cursor: pointer;
 }
 
-.menuItem.hidden {
+.menuContent.hidden {
   display: none;
 }
