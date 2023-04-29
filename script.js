@@ -5,8 +5,13 @@ const menuMaker = (menuContainerNode) => {
 
   const menuContent = menuContainerNode.querySelector(".menuContent");
 
+  const topBar = menuContainerNode.querySelector(".topBar");
+
   expandButton.addEventListener("click", () => {
     menuContent.classList.toggle("hidden");
+    menuContent.classList.contains("hidden")
+      ? (topBar.style.borderBottom = "")
+      : (topBar.style.borderBottom = "2px solid lightgray");
   });
 };
 
